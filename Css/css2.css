@@ -1,0 +1,92 @@
+html {
+        padding: 0;
+    margin: 0;
+}
+#header {
+    margin: 0;
+    padding: 0;
+    z-index: 888;
+}
+body {
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    background-image: url(img/5.jpg);
+}
+.menu-img img {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            /*Define animation attributes*/
+            animation-name: sample;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+        }
+        /*Define animation actions*/
+        
+        @keyframes sample {
+            0% {
+                opacity: 1;
+            }
+            /*~ 2.05s*/
+            17% {
+                opacity: 1;
+            }
+            /*~3s*/
+            25% {
+                opacity: 0;
+            }
+            /*~11.4s*/
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        div img:nth-of-type(1) {
+            animation-delay: 0s;
+            z-index: 5;
+        }
+        
+        div img:nth-of-type(2) {
+            animation-delay: 6s;
+            z-index: 3;
+        }
+        
+        div img:nth-of-type(3) {
+            animation-delay: 3s;
+            z-index: 4;
+        }
+        
+        div img:nth-of-type(4) {
+            animation-delay: 9s;
+            z-index: 2;
+        }
+
+
+.col-1 {
+    display: inline-block;
+    z-index: 999;
+}
+.col-1 ul li  {
+list-style: inside none;
+    text-align: left;
+    
+}
+.col-1 ul li a  {
+    display: none;
+    background-color: transparent;
+    width: 200px;
+    height: 20px;
+    text-align: left;
+    
+}
+.col-1 a:hover ul li {
+    display: block;
+    list-style: inside none;
+    text-align: left;
+}
